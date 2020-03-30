@@ -1,0 +1,16 @@
+[user]
+	name = Gonçalo Marques
+	email = goncalo.marques@mercedes-benz.io
+	#signingKey = 
+[credential]
+	helper = osxkeychain
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = true
+[core]
+	editor = nano
+	#excludesfile = <pathto>.gitignore_global
+
+[alias]
+	ghost-branches = "!git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}'"
