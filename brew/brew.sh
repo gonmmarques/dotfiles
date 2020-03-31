@@ -46,9 +46,11 @@ brew install watch
 brew install wget
 brew install zplug
 brew install zsh
+brew install zsh-syntax-highlighting
 
 brew tap pivotal/tap
 brew install springboot
+spring install org.springframework.cloud:spring-cloud-cli:2.2.1.RELEASE
 
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk11
