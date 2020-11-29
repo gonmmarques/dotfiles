@@ -28,24 +28,31 @@ brew install gnu-getopt
 brew install gnu-sed
 brew install gnupg
 brew install gradle
+brew install grip
 brew install groovy
+brew install helm
+brew install hstr
 brew install jenv
 brew install jmeter
 brew install jq
 brew install kotlin
-brew install kubernetes-cli
+brew install kubectl
 brew install maven
+brew install minikube
 brew install nano
+brew install newman
 brew install node@12
 brew install pinentry-mac
 brew install pkg-config
 brew install postgresql
 brew install python3
+brew install ruby
 brew install unrar
 brew install watch
 brew install wget
 brew install zplug
 brew install zsh
+brew install zsh-completions
 brew install zsh-syntax-highlighting
 
 brew tap pivotal/tap
@@ -54,6 +61,11 @@ spring install org.springframework.cloud:spring-cloud-cli:2.2.1.RELEASE
 
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk11
+
+brew tap heroku/brew 
+brew install heroku
+
+brew cask install docker
 
 # Install GUI apps
 brew cask install iterm2
