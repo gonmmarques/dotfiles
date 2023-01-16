@@ -34,6 +34,7 @@ plugins=(
   git
   git-extras
   kubectl
+  jenv
   mvn
   sudo
   z
@@ -66,14 +67,19 @@ alias ~="cd ~"
 
 
 # Path exports
-export M2_HOME=/usr/local/Cellar/maven/3.5.4/libexec
 export M2=$M2_HOME/bin
 export PATH=$PATH:$M2_HOME/bin
-export PATH="/usr/local/opt/node/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="~/Library/Python/3.9/bin/:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-export PATH="/usr/local/opt/node@12/bin:$PATH"
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE="/var/run/docker.sock"
 
 source $ZSH/oh-my-zsh.sh
+
+alias hh=hstr                    # hh to be alias for hstr
+setopt histignorespace           # skip cmds w/ leading space from history
+export HSTR_CONFIG=hicolor       # get more colors
+bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
