@@ -1,7 +1,8 @@
 # Bash Configuration
+$username="whoami"
 export LC_ALL=en_US.UTF-8
 export EDITOR=nano
-export HISTFILE=/Users/marqugon/.zsh_history
+export HISTFILE=/Users/$username/.zsh_history
 export HISTSIZE='32768';
 export HISTFILESIZE="${HISTSIZE}";
 # Omit duplicates and commands that begin with a space from history.
@@ -34,6 +35,7 @@ plugins=(
   git
   git-extras
   kubectl
+  kube-ps1
   jenv
   mvn
   sudo
@@ -76,6 +78,12 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.jenv/bin:$PATH"
 export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE="/var/run/docker.sock"
+
+# kubectx & kubens
+export KUBECTX_CURRENT_FGCOLOR=$(tput setaf 6) # blue text
+export KUBECTX_CURRENT_BGCOLOR=$(tput setab 0) # white background
+export KUBECTX_IGNORE_FZF=1.
+
 
 source $ZSH/oh-my-zsh.sh
 
