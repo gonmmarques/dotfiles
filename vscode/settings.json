@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.7",
+    "workbench.colorTheme": "Darcula Theme from IntelliJ",
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "window.zoomLevel": 0,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.startupEditor": "newUntitledFile"
+}
